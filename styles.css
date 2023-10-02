@@ -1,0 +1,120 @@
+/* Establece reglas para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+.navbar-brand span {
+    font-size: 44px;
+    line-height: 1.5;
+    position: relative;
+    top: 10px;
+}
+
+/* Estilos para el cuerpo (body) de la página */
+body {
+    background-color: #030303;
+    /* Establece el color de fondo del cuerpo */
+    min-height: 200vh;
+    /* Establece la altura mínima del cuerpo al 200% de la altura de la ventana (viewport) */
+}
+
+/* Estilos para el encabezado (header) de la página */
+header {
+
+    position: fixed;
+    /* Establece la posición fija para que el encabezado se mantenga en la parte superior de la ventana */
+    top: 0;
+    /* Establece la parte superior del encabezado en la parte superior de la ventana */
+    left: 0;
+    /* Establece la parte izquierda del encabezado en la parte izquierda de la ventana */
+    width: 100%;
+    /* Establece el ancho del encabezado al 100% del ancho de la ventana */
+    display: flex;
+    /* Utiliza el modelo de caja flexible para el encabezado */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos en el encabezado */
+    align-items: center;
+    /* Centra verticalmente los elementos en el encabezado */
+    transition: 1s;
+    /* Agrega una transición suave para cambios en el encabezado */
+    background-color: #ffffff;
+    /* Establece el color de fondo del encabezado */
+    padding: 0px 50px;
+    z-index: 100000;
+}
+
+.btn-primary {
+    background-color: purple;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.3, 0.3);
+    /* Agrega una sombra suave */
+
+    outline: auto;
+}
+
+.btn-primary:hover {
+    background-color: rgb(33, 4, 44);
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+}
+
+
+header.sticky {
+    padding: 0px 0px;
+    background: #470640;
+}
+
+header.sticky .logo {
+    display: none;
+
+    padding: 0px 10px;
+    background: #030303;
+}
+
+header.sticky ul li a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+header.sticky span {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.5;
+    position: relative;
+    top: 0px;
+    padding: 0px 50px;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    background: url(assets/mapache.jpg);
+    background-size: cover;
+
+}
