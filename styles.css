@@ -1,12 +1,10 @@
 /* Establece reglas para todos los elementos */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: fantasy;
+    font-family: 'Lato', Regular 400;
 }
- 
-
 
 .navbar-brand span {
     font-size: 44px;
@@ -15,7 +13,6 @@
     top: 10px;
 }
 
-/* Estilos para el cuerpo (body) de la página */
 body {
     background-color: #030303;
     /* Establece el color de fondo del cuerpo */
@@ -23,7 +20,6 @@ body {
     /* Establece la altura mínima del cuerpo al 200% de la altura de la ventana (viewport) */
 }
 
-/* Estilos para el encabezado (header) de la página */
 header {
 
     position: fixed;
@@ -49,7 +45,7 @@ header {
 }
 
 .btn-primary {
-    background-color: purple;
+    background-color: #761a8d;
     box-shadow: 2px 2px 5px rgba(0, 0, 0.3, 0.3);
     /* Agrega una sombra suave */
 
@@ -57,36 +53,40 @@ header {
 }
 
 .btn-primary:hover {
-    background-color: rgb(33, 4, 44);
+    background-color: #2e0a37;
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
 }
 
-
 header.sticky {
     padding: 0px 0px;
-    background: #470640;
+    background: #521262;
 }
 
 header.sticky .logo {
     display: none;
-
     padding: 0px 10px;
     background: #030303;
 }
 
-header.sticky ul li a {
+header.sticky .botonmorado {
     color: #ffffff;
     font-size: 15px;
 }
 
 header.sticky span {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.5;
     position: relative;
     top: 0px;
     padding: 0px 50px;
+
+}
+
+header.sticky ul li a {
+    padding: 10px 15px;
+    font-size: 13px;
 
 }
 
@@ -101,7 +101,6 @@ header ul {
 header ul li {
     position: relative;
     list-style: none;
-
 }
 
 header ul li a {
@@ -114,9 +113,118 @@ header ul li a {
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: 100px;
-    background: url(assets/mapache.jpg);
     background-size: cover;
 
+}
+
+.d-flex {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: green;
+
+}
+
+.row {
+
+    border-radius: 5px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 85%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row p {
+    text-align: center;
+
+    color: white;
+    margin-top: 50px;
+    font-size: 2.3vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.rowtitulo h2 {
+    text-align: center;
+    color: #B17A50;
+    font-size: 6.5vh;
+}
+
+.col-sm {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: rebeccapurple;
+}
+
+.rowabajo {
+    color: white;
+}
+
+.columnsmarcas {
+    padding: 0px;
+}
+
+.row1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagen2 {
+    padding-top: 10px;
+    height: auto;
+    max-height: 800px;
+    max-width: 100%;
+}
+
+.botoneslogo {
+    padding: 20px 30px;
+    font-size: 29px;
+}
+
+.botonapple {
+    text-align: center;
+    padding-right: 50px;
+}
+
+.jumbotron {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.contenedor2 {
+    margin: 30px;
+    height: 99vh;
+    width: auto;
+    background-color: black;
+}
+
+.rowinicio {
+    height: 100%;
+}
+
+.fondoimagen3 {
+    max-width: 43%;
+    border-radius: 20px;
+    height: 50%;
+    margin-left: 30px;
+    padding: 0%;
+    text-align: start;
+    background-color: #761a8d;
+
+}
+
+.imagen3 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    border-radius: 20px;
+    height: 98%;
+    max-height: 100%;
+    max-width: 100%;
 }

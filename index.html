@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,16 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
         </script>
-
     <header>
         <a class="navbar-brand" href="#" onclick="location.reload(); return false;">
-            <img src="assets/logosinfondo.png" alt="Logo" width="100" height="auto" class = "logo">
+            <img src="assets/logosinfondo.png" alt="Logo" width="100" height="auto" class="logo">
             <span>weSafe</span>
         </a>
         <nav class="navbar navbar-expand-lg">
@@ -25,30 +28,110 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Quienes somos</a>
+                            <a class="btn btn-light btn-lg" aria-current="page" href="#">Quienes
+                                somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comunidad</a>
+                            <a class="btn btn-light btn-lg" href="#">Comunidad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="btn btn-light btn-lg" href="#">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary btn-lg" href="#">Descargar</a>
+                            <a class="btn btn-primary btn-lg botonmorado" href="#">Descargar</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <section class="banner"></section>
 
-    <section class="banner"> </section>
     <script type="text/javascript">
-        window.addEventListener("scroll",function(){
+        window.addEventListener("scroll", function () {
             var header = document.querySelector("header");
-            header.classList.toggle("sticky",window.scrollY > 100);
+            header.classList.toggle("sticky", window.scrollY > 100);
         })
     </script>
+
+    <section class="fondo">
+        <div class="d-flex">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="row row1 rowtitulo">
+                        <h2>
+                            Unidos por la seguridad de todas
+                        </h2>
+                        <p>
+                            Disponible para ambas plataformas moviles
+                        </p>
+
+                    </div>
+                    <div class="row row1 rowmarcas">
+                        <div class="col-sm columnsmarcas">
+                            <a class="btn btn-primary btn-lg botoneslogo" href="#">
+                                <i class="bi bi-android2">
+                                    Android
+                                </i>
+                            </a>
+                        </div>
+                        <div class="col-sm columnsmarcas">
+                            <a class="btn btn-primary btn-lg botoneslogo botonapple" href="#">
+                                <i class="bi bi-apple">
+                                    Apple
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row1 rowabajo">
+                        <p>
+                            Forma parte de nuesta comunidad. Apoya a alguien
+                            que
+                            este en una situacion de riesgo.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <img src="assets/img1.jpg" class="img imagen2" alt="Imagen">
+                </div>
+                <div class="col-sm ">
+                    <img src="assets/img2.jpg" class="img imagen2" alt="Imagen">
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-4">Descarga nuestra app ahora!!</h1>
+            <p class="lead">Empoderando a las mujeres con un solo toque: ¡Únete a la revolución de la seguridad!</p>
+            <hr class="my-4">
+            <p>La seguridad no debería ser un lujo: Nuestra aplicación es tu aliada gratuita.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Conoce nuestra comunidad!</a>
+        </div>
+        <div class="container-fluid contenedor2">
+            <div class="row rowinicio ">
+                <div class="col-7 fondoimagen3 ">
+                    <img src="assets/im3.jpg" class="img imagen3" alt="Imagen">
+
+                </div>
+                <div class="col">
+                    <div class="row row1 rowtitulo">
+                        <h2>
+                            ¿Qué es weSafe?
+                        </h2>
+                        <p>
+                            weSafe es una aplicación que sirve como herramienta de apoyo, para las mujeres que se
+                            sientan en una situación de peligro.
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
+
 </body>
 
 </html>
